@@ -1,0 +1,186 @@
+<!-- 用于布局 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HASN Blog</title>
+	<meta charset="utf-8">
+
+	<!-- 引入配置文件 -->
+	
+<link rel="stylesheet" href="/css/main.css">
+
+
+	<!-- 字体图片库 -->
+	
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+	<!-- 代码高亮库 -->
+	
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.css">
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+
+    <div id="main">
+        <!-- 引入侧边栏 -->
+        <aside>
+            <!-- 用于侧边栏 -->
+
+<!-- 搜索栏 -->
+<div id="search">
+	<input class="search-input" type="text" placeholder="search">
+	<i id="search-icon" class="fa fa-bars" title="切换目录与索引">
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Warframe
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/18/Warframe/war/">
+                                <i class="fa fa-file"></i>
+                                war
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+                        
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/18/hello-world/">
+                                <i class="fa fa-file"></i>
+                                hello-world
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                开发目录
+                            </a>
+                            
+                    <ul>
+                        <li class="file active">
+                            <a href="/2024/12/18/开发目录/hello-world/">
+                                <i class="fa fa-file"></i>
+                                hello-world
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+                        
+                    </ul>
+    
+</div>
+
+<div id="toc" style="display: none;"></div>
+
+        </aside>
+
+		<!-- 引入导航 -->
+		<nav>
+			<nav id="menu">
+    <ul>
+      
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">主页</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/about" class="menu-item-link">关于</a>
+        </li>
+      
+  
+      
+      
+        <li class="menu-item">
+          <a href="https://github.com" class="menu-item-link" target="_blank">github</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  <script>
+    // 在页面加载完成后调用 handleNavbarScroll 函数
+    window.addEventListener('load', handleNavbarScroll);
+  
+    // 在滚动事件发生时调用 handleNavbarScroll 函数
+    window.addEventListener('scroll', handleNavbarScroll);
+  </script>
+  
+		</nav>
+        
+        <!-- 引入正文 -->
+        <div id="content">
+      <!-- 用于文章 -->
+
+<div>
+    <span id="post-author">作者: HASN</span>
+    <span id="post-date">2024-12-18 06:55:11</span>
+</div>
+
+<div id="article">
+    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+</div>
+
+        </div>
+        
+    </div>
+
+    <!-- 引入代码高亮的 js -->
+	
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+	
+    <!-- 引入 jquery -->
+    
+<script src="/lib/jquery-3.4.1.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <!-- 引入 pjax  局部刷新 
+     让搜索栏搜索出来的结果点击后不会刷新栏目只刷新右侧内容
+    -->
+    
+<script src="/lib/jquery.pjax.js"></script>
+
+
+    <!-- 先引用 jquery 再引入自己的 js 代码 -->
+    <!-- 引入 js 文件 -->
+    
+<script src="/js/main.js"></script>
+
+    
+</body>
+</html>

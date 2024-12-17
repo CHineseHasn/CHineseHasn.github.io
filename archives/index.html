@@ -1,0 +1,206 @@
+<!-- 用于布局 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HASN Blog</title>
+	<meta charset="utf-8">
+
+	<!-- 引入配置文件 -->
+	
+<link rel="stylesheet" href="/css/main.css">
+
+
+	<!-- 字体图片库 -->
+	
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+	<!-- 代码高亮库 -->
+	
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.css">
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+
+    <div id="main">
+        <!-- 引入侧边栏 -->
+        <aside>
+            <!-- 用于侧边栏 -->
+
+<!-- 搜索栏 -->
+<div id="search">
+	<input class="search-input" type="text" placeholder="search">
+	<i id="search-icon" class="fa fa-bars" title="切换目录与索引">
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Warframe
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/18/Warframe/war/">
+                                <i class="fa fa-file"></i>
+                                war
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+                        
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/18/hello-world/">
+                                <i class="fa fa-file"></i>
+                                hello-world
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                开发目录
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/18/开发目录/hello-world/">
+                                <i class="fa fa-file"></i>
+                                hello-world
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+                        
+                    </ul>
+    
+</div>
+
+<div id="toc" style="display: none;"></div>
+
+        </aside>
+
+		<!-- 引入导航 -->
+		<nav>
+			<nav id="menu">
+    <ul>
+      
+      
+        <li class="menu-item">
+          <a href="/" class="menu-item-link">主页</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/about" class="menu-item-link">关于</a>
+        </li>
+      
+  
+      
+      
+        <li class="menu-item">
+          <a href="https://github.com" class="menu-item-link" target="_blank">github</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  <script>
+    // 在页面加载完成后调用 handleNavbarScroll 函数
+    window.addEventListener('load', handleNavbarScroll);
+  
+    // 在滚动事件发生时调用 handleNavbarScroll 函数
+    window.addEventListener('scroll', handleNavbarScroll);
+  </script>
+  
+		</nav>
+        
+        <!-- 引入正文 -->
+        <div id="content">
+      <!-- 用于主页  -->
+
+<div id="articleList">
+    <ul>
+        
+
+            <li class="article-li">
+                <span class="article-date">2024-12-18</span>
+                <a class="article-read" href="/2024/12/18/Warframe/war/"> 阅读全文 </span>
+                <a class="article-title" href="/2024/12/18/Warframe/war/">war</a>
+                <div class="article-digest">
+                    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
+                    ...
+                </div>
+            </li>
+            
+        
+
+            <li class="article-li">
+                <span class="article-date">2024-12-18</span>
+                <a class="article-read" href="/2024/12/18/hello-world/"> 阅读全文 </span>
+                <a class="article-title" href="/2024/12/18/hello-world/">hello-world</a>
+                <div class="article-digest">
+                    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
+                    ...
+                </div>
+            </li>
+            
+        
+
+            <li class="article-li">
+                <span class="article-date">2024-12-18</span>
+                <a class="article-read" href="/2024/12/18/开发目录/hello-world/"> 阅读全文 </span>
+                <a class="article-title" href="/2024/12/18/开发目录/hello-world/">hello-world</a>
+                <div class="article-digest">
+                    Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
+                    ...
+                </div>
+            </li>
+            
+        
+    </ul>
+</div>
+
+        </div>
+        
+    </div>
+
+    <!-- 引入代码高亮的 js -->
+	
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+	
+    <!-- 引入 jquery -->
+    
+<script src="/lib/jquery-3.4.1.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <!-- 引入 pjax  局部刷新 
+     让搜索栏搜索出来的结果点击后不会刷新栏目只刷新右侧内容
+    -->
+    
+<script src="/lib/jquery.pjax.js"></script>
+
+
+    <!-- 先引用 jquery 再引入自己的 js 代码 -->
+    <!-- 引入 js 文件 -->
+    
+<script src="/js/main.js"></script>
+
+    
+</body>
+</html>
