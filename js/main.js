@@ -6,35 +6,33 @@ $(document).ready(function () {
 	showArticleIndex();
 	switchTreeOrIndex();
 	handleNavbarScroll();
-});
-
-$(document).ready(function () {
-	// 其他初始化代码...
 	$(window).on('scroll', handleNavbarScroll);
-
-	// 在这里添加 handleNavbarScroll() 函数的调用
 	handleNavbarScroll();
 });
 
 // 监听滚动事件，当滚动到一定位置时，隐藏导航栏
 function handleNavbarScroll() {
-	var menu = document.getElementById('menus');
-	if ('scrollY' in window) {
-	  if (window.scrollY > 0) {
-		menu.style.display = 'none';
-	  } else {
-		menu.style.display = 'block';
-	  }
-	} else {
-	  if (window.pageYOffset > 0) {
-		menu.style.display = 'none';
-	  } else {
-		menu.style.display = 'block';
-	  }
-	}
+    var menu = document.getElementById('menus');
+    var pst = document.getElementById('post');
+    if ('scrollY' in window) {
+        if (window.scrollY > 0) {
+            menu.style.display = 'none';
+            pst.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+            pst.style.display = 'block';
+        }
+    } else {
+        if (window.pageYOffset > 0) {
+            menu.style.display = 'none';
+            pst.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+            pst.style.display = 'block';
+        }
+    }
 }
 
-  
 // 点击搜索旁的按钮，切换目录与索引
 function switchTreeOrIndex(){
 	$("#search-icon").on("click", function(e){
