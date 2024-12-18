@@ -9,16 +9,15 @@ html, body{
 	height: 100%;
 }
 
+nav {
+	height: 50px;
+}
+
 aside {
 	width: 300px;
 	height: 100%;
 	position: fixed;
 	background: #262a30;
-}
-
-nav {
-	height: 50px;
-	/*background: #b9e1b1;*/
 }
 
 #content {
@@ -29,29 +28,76 @@ nav {
 /* #################### 全局 #################### */
 
 /* #################### 导航 #################### */
-nav #menu {
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: 50px;
+	/* background: #b9e1b1; */
+	z-index: 999;
+  }
+  
+  nav #menu {
 	float: right;
 	padding-right: 20px;
-}
-nav ul li {
+  }
+  
+  nav ul li {
 	float: left;
 	padding: 10px;
 	list-style: none;
-}
-nav ul li a{
+  }
+  
+  nav ul li a {
 	color: #555;
 	font-size: 12px;
 	text-decoration: none;
-}
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
 	border-bottom: 1px solid;
-}
-/* #################### 导航 #################### */
+  }
+  /* #################### 导航 #################### */
+  
 
 /* #################### 侧边栏 #################### */
+
+#avatar {
+	width: 100%;
+	height: 500px;
+	color: #ff0000;
+	background-image: url('../images/a.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+  }
+  
+  /* #avatar img {
+	display: none;
+  }
+  
+  #avatar::after {
+	content: "CANT";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #ff0000;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 500px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  #avatar:hover::after {
+	opacity: 1;
+  } */
+
 /* 搜索框 */
 aside input {
-	width: 290px;
+	width: 100%;
 	height: 50px;
 	margin: 0;
 	border: 0;
@@ -68,7 +114,6 @@ aside input {
 /* 搜索图标 */
 aside #search #search-icon {
 	position: absolute;
-	top: 0;
 	right: 0;
 	color: #999;
 	font-size: 20px;
@@ -99,7 +144,7 @@ aside {
 
 /* 树目录位置 */
 aside #tree {
-	padding-top: 55px
+	margin-top: 35%;
 }
 
 /* 树目录 */
